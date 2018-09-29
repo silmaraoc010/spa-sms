@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>SMS GAMES</title>
+</head>
+<body>
+  <div id="vue">
+    <nav id="top" class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">SMS GAMES</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="">Rua Santa Ifigênia n°92 loja 25 </a></li>
+          <li><a href="">(11)3228-4709</a></li>
+          <li><a href="https://www.facebook.com/smsgames11/">Curta no facebook</a></li>
+        </ul>
+      </div>
+      <div class="nav-content">
+        <ul class="tabs hide-on">
+          <li class="tab"><a href="#Aparelhos" @click='ajaxProducts("/consoles/")'>Aparelhos</a></li>
+          <li class="tab"><a class="" href="#Colecoes" @click='ajaxProducts("/Coleções-bonecos/Comics/")'>Colecionáveis</a></li>
+          <li class="tab"><a href="#games" @click='ajaxProducts("/games/")'>games</a></li>
+          <li class="tab"><a href="#livros" @click='ajaxProducts("/livros/nerds/")'>Livros e nerdices</a></li>
+        </ul>
+      </div>
+    </nav>     
+    <section id="detail-product">
+       <!-- Detalhes do produto-->
+    </section>
+    <div id="content-template" style="display: none">         
+    </div>    
+    <!--  PERSONAL CARE SECTION -->
+    <section id="personal-care" class="row">
+        <product 
+        v-for="(product, index) in products"
+        :key="index"
+        :title="product.title"
+        :image="product.thumbnail"
+        :price="product.price"
+        :id="product.id">
+      </product>
+    </section>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

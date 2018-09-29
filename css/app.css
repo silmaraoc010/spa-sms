@@ -1,0 +1,73 @@
+body {
+    background-color: #F5F5F5;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+a.brand-logo {
+    margin-left: 3rem;
+}
+
+nav ul{
+    margin-left: 3rem;
+}
+
+
+
+#paypal-button {
+    position: absolute;
+    right: 1rem;
+    top: .3rem;
+    /* margin-left: 30rem; */
+}
+
+#content-template  {
+    /* position: absolute; */
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    /* top: 10rem; */
+}
+
+
+#paypal-button {
+    z-index: 10;
+}
+
+h5 {
+ color: brown;
+ font-style: italic;
+}
+
+#personal-care {
+    margin-top: 10rem;
+}
+
+#data-product {
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+#product-card {
+    padding: 15px;
+    border-radius: 0 0 2px 2px;
+}
+.card.card-height{
+    height: 320px ;
+}
+
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: 7px;
+    bottom: -20px;
+}
+
+.card .card-content .price {
+    position: absolute;
+    bottom: 1rem;
+    color: brown;
+}

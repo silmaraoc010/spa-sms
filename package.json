@@ -1,0 +1,24 @@
+{
+  "name": "sms-spa",
+  "version": "1.0.0",
+  "description": "* **Desenvolvedora:** _Silmara Cavalcante_ # [Laboratoria- Sprint-5](http://laboratoria.la)",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Silmara Cavalcante",
+  "license": "ISC",
+  "dependencies": {
+    "vanilla-router": "^1.2.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "silmaraoc010"
+  }
+}
